@@ -4,7 +4,6 @@ import {
     View,
     Text,
 } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 import { styles } from './styles';
 
 export const GlobalButtons = ({ text }) => {

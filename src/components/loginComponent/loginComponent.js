@@ -23,7 +23,9 @@ export const LoginComponent = () => {
                 <GlobalTextInput labelText={'Email'} passwordInput={false} />
                 <GlobalTextInput labelText={'Password'} passwordInput={true} />
             </View>
-            <GlobalButtons text={'Log in'} />
+            <TouchableOpacity onPress={() => navigation.navigate(NavigationNames.RootTabContainer, { screen: NavigationNames.HomeScreen })}>
+                <GlobalButtons text={'Log in'} />
+            </TouchableOpacity>
             <View style={styles.registerArea}>
                 <Text style={styles.registerText}>Don't you have account?</Text>
                 <View style={styles.registerButtonArea}>

@@ -1,15 +1,20 @@
 import React from 'react';
 import {
     View,
-    Text,
 } from 'react-native';
+
+import { HeaderComponent } from '../../components';
+import { HomeComponent } from '../../components';
+
+import { fooData } from './foodData';
 
 import { styles } from './styles';
 
 export const HomeScreen = () => {
     return (
-        <View>
-            <Text>Hello home screen.</Text>
+        <View style={styles.container}>
+            <HeaderComponent />
+            <HomeComponent fooData={fooData} />
         </View>
     )
 }

@@ -8,12 +8,12 @@ export const styles = StyleSheet.create({
         marginTop: 20,
     },
     button: {
-        width: 200,
+        width: 250,
         height: 45,
         borderRadius: 50,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#ff8566',
+        backgroundColor: '#fd8664',
     },
     buttonText: {
         color: 'white',
