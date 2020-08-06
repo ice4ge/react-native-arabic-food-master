@@ -12,4 +12,5 @@ export const NavigationNames = {
     LoginScreen: 'LoginScreen',
     AddScreen: 'AddScreen',
     FoodsScreen: 'FoodsScreen',
+    RegisterScreen: 'RegisterScreen',
 }

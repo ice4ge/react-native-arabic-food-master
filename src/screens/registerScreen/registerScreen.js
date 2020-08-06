@@ -1,16 +1,17 @@
 import React from 'react';
+
 import {
     View,
+    Text,
 } from 'react-native';
 
+import { RegisterComponent } from '../../components';
 import { styles } from './styles';
 
-import { LoginComponent } from '../../components';
-
-export const LoginScreen = () => {
+export const RegisterScreen = () => {
     return (
         <View style={styles.container}>
-            <LoginComponent />
+            <RegisterComponent></RegisterComponent>
         </View>
     )
 }
