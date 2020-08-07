@@ -7,9 +7,10 @@ import { TabNavigationStyle, stackScreenOptions } from './bottomNavigationStyle'
 
 import {
   HomeScreen,
-  LoginScreen,
   FoodsScreen,
   AddScreen,
+  CategoryDetailsScreen,
+  CategoryItemDetailScreen,
 } from '../screens';
 
 const Stack = createStackNavigator();
@@ -35,6 +36,14 @@ const FoodsTabStack = () => {
         name={NavigationNames.FoodsScreen}
         component={FoodsScreen}
       />
+      <Stack.Screen
+        name={NavigationNames.CategoryDetailsScreen}
+        component={CategoryDetailsScreen}
+      />
+      <Stack.Screen
+        name={NavigationNames.CategoryItemDetailScreen}
+        component={CategoryItemDetailScreen}
+      />
     </Stack.Navigator>
   );
 };
@@ -57,7 +66,7 @@ export const TabStack = () => {
     <Tab.Navigator
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
-         
+
           // Tab bar icon component
           return <TabNavigationStyle route={route} focused={focused} />;
         },

@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
     container: {
         width: '100%',
-        paddingBottom: 40,
+        paddingBottom: 20,
     },
     labelText: {
         width: '100%',
@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
         borderTopWidth: 0,
         borderLeftWidth: 0,
         borderRightWidth: 0,
-        borderWidth: 1,
+        borderWidth: 2,
         fontSize: 16,
     },
 })

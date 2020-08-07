@@ -4,10 +4,15 @@ import {
     Text,
 } from 'react-native';
 
+import { styles } from './styles';
+import { HeaderComponent } from '../../components';
+import { EditProfile } from '../../components';
+
 export const AddScreen = () => {
     return (
-        <View>
-            <Text>Hello add screen.</Text>
+        <View style={styles.container}>
+            <HeaderComponent text={'Edit Profile'}/>
+            <EditProfile />
         </View>
     )
 }

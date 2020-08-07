@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
         alignItems:'center',
     },
     listContainer: {
-        width: '80%',
+        width: '90%',
         marginTop: 40,
     },
     foodBlock: {
@@ -19,8 +19,8 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        paddingLeft: 10,
-        paddingRight: 10,
+        paddingLeft: 20,
+        paddingRight: 20,
     },
     blockContainer: {
         width: '100%',

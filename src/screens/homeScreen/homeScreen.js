@@ -13,7 +13,7 @@ import { styles } from './styles';
 export const HomeScreen = () => {
     return (
         <View style={styles.container}>
-            <HeaderComponent />
+            <HeaderComponent text={'Home'} />
             <HomeComponent fooData={fooData} />
         </View>
     )
