@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
         width: '100%', 
         textAlign: 'right', 
         paddingTop: 10, 
-        color: '#fab75e',
+        color: '#f7a222',
         fontSize: 17,
         paddingBottom: 10,
     },
@@ -55,17 +55,17 @@ export const styles = StyleSheet.create({
         paddingTop: 10,
     },
     itemAmount: {
-        color: '#fdbfad',
+        color: '#fb896a',
         fontSize: 16,
     },
     itemName: {
-        color: '#fbda79',
+        color: '#f8c220',
         fontSize: 16,
     },
     countText: {
         fontSize: 18,
         paddingTop: 10,
-        color: '#fbc986',
+        color: '#f7a222',
         paddingBottom: 10,
     },
     totalCountAmount: {
@@ -78,7 +78,7 @@ export const styles = StyleSheet.create({
     },
     amountCountNumber: {
         fontSize: 19,
-        color: '#c3d8a4',
+        color: '#95ba5e',
     },
     doseCountAmount: {
         width: '70%',

@@ -16,7 +16,10 @@ export const styles = StyleSheet.create({
     searchBlock: {
         width: '100%',
         height: 45,
-        backgroundColor: 'red',
+        borderBottomColor: 'white',
+        borderBottomWidth: 2,
+        flexDirection: 'row',
+        alignItems:'flex-end',
     },
     blockContainer: {
         width: '100%',
@@ -32,6 +35,13 @@ export const styles = StyleSheet.create({
     },
     categoryName: {
         fontSize: 18,
-        color: '#fac97d',
+        color: '#f7a222',
+    },
+    searchInput: {
+        height: 40, 
+        fontSize: 15, 
+        color: '#000',
+        flex: 1,
+        paddingBottom: 0,
     }
 })

@@ -16,10 +16,13 @@ export const styles = StyleSheet.create({
     searchBlock: {
         width: '100%',
         height: 45,
-        backgroundColor: 'red',
+        borderBottomColor: 'white',
+        borderBottomWidth: 2,
+        flexDirection: 'row',
+        alignItems:'flex-end',
     },
     blockContainer: {
-        width: 345,
+        width: '100%',
         height: 35,
         backgroundColor: '#fbf8e1',
         marginTop: 10, 
@@ -33,7 +36,7 @@ export const styles = StyleSheet.create({
     },
     categoryName: {
         fontSize: 18,
-        color: '#fac97d',
+        color: '#f7a222',
     },
     rightCicleContainer: {
         position: 'absolute',
@@ -46,5 +49,12 @@ export const styles = StyleSheet.create({
         borderRadius: 50,
         backgroundColor: 'white',
         marginLeft: 300,
+    },
+    searchInput: {
+        height: 40, 
+        fontSize: 15, 
+        color: '#000',
+        flex: 1,
+        paddingBottom: 0,
     }
 })
