@@ -20,7 +20,7 @@ export const CategoryDetailComponent = ({ itemData }) => {
     const search = useRef();
 
     const handleFocus = () => {
-            setFocused(true);
+        setFocused(true);
     }
     const handleBlur = () => {
         setFocused(false);
@@ -53,15 +53,11 @@ export const CategoryDetailComponent = ({ itemData }) => {
                         </View>
                     </View>
                     <View style={{ width: '85%', paddingBottom: 150, }}>
-                        <FlatList
-                            data={itemData}
-                            keyExtractor={(item, index) => `key${index}ForMenu`}
-                            renderItem={({ item }) => (
-                                <TouchableOpacity onPress={() => navigation.navigate(NavigationNames.CategoryItemDetailScreen)}>
-                                    <SearchResultBlock blockData={item} />
-                                </TouchableOpacity>
-                            )}
-                        />
+                        {itemData.map((items, i) =>
+                            <TouchableOpacity key={i} onPress={() => navigation.navigate(NavigationNames.CategoryItemDetailScreen)}>
+                                <SearchResultBlock blockData={items} />
+                            </TouchableOpacity>
+                        )}
                     </View>
                 </View>
             </ScrollView>

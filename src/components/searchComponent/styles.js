@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
     blocksContainer: {
         width: '100%',
         alignItems: 'center',
-        marginTop: 40,
+        marginTop: 20,
     },  
     mainBlock: {
         width: '80%',

@@ -3,6 +3,7 @@ import React from 'react';
 import {
     View,
     Text,
+    ScrollView,
 } from 'react-native';
 import { HeaderComponent } from '../../components';
 import { styles } from './styles';

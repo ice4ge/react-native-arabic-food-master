@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import {
     View,
@@ -9,8 +9,15 @@ import {
 
 import { styles } from './styles';
 import { HeartIcon } from './heartIcon';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 export const ItemDetailComponent = ({ detailData }) => {
+    const [heartColor, setHeartColor] = useState('#999999');
+
+    const toggleHeartColor = () => {
+        setHeartColor(heartColor === '#999999' ? 'red' : '#999999');
+    }
+
     return (
         <View style={styles.container}>
             <View style={styles.detailCard}>
@@ -39,9 +46,11 @@ export const ItemDetailComponent = ({ detailData }) => {
                 <View style={styles.doseCountAmount}>
                     <Text style={styles.amountCountNumber}>2.9</Text>
                 </View>
-                <View style={styles.IconContainer}>
-                    <HeartIcon />
-                </View>
+                <TouchableOpacity onPress={() => toggleHeartColor()}>
+                    <View style={styles.IconContainer}>
+                        <HeartIcon color={heartColor} />
+                    </View>
+                </TouchableOpacity>
             </View>
         </View>
     )

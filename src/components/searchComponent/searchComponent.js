@@ -21,7 +21,7 @@ export const SearchComponent = ({ searchData }) => {
     const search = useRef();
 
     const handleFocus = () => {
-            setFocused(true);
+        setFocused(true);
     }
     const handleBlur = () => {
         setFocused(false);
@@ -38,7 +38,7 @@ export const SearchComponent = ({ searchData }) => {
 
     return (
         <View style={styles.container}>
-            <ScrollView style={{ width: '100%' }}>
+            <ScrollView>
                 <View style={styles.blocksContainer}>
                     <View style={styles.mainBlock}>
                         <View style={styles.searchBlock}>
@@ -54,15 +54,11 @@ export const SearchComponent = ({ searchData }) => {
                         </View>
                     </View>
                     <View style={{ width: '85%', paddingBottom: 150, }}>
-                        <FlatList
-                            data={searchData}
-                            keyExtractor={(item, index) => `key${index}ForMenu`}
-                            renderItem={({ item }) => (
-                                <TouchableOpacity onPress={() => navigation.navigate(NavigationNames.CategoryDetailsScreen)}>
-                                    <SearchResultBlock blockData={item} />
-                                </TouchableOpacity>
-                            )}
-                        />
+                        {searchData.map((items, i) =>
+                            <TouchableOpacity key={i} onPress={() => navigation.navigate(NavigationNames.CategoryDetailsScreen)}>
+                                <SearchResultBlock blockData={items} />
+                            </TouchableOpacity>
+                        )}
                     </View>
                 </View>
             </ScrollView>
